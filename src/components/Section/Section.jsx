@@ -27,11 +27,11 @@ const Section = () => {
     }, [performApiCall]);
 
     const topButtonLabelImplementation = useCallback((e) => {
-        topLabel === "Show all" ? setTopLabel("Collapse") : setTopLabel("Show All");
+        topLabel === "Show all" ? setTopLabel("Collapse") : setTopLabel("Show all");
     },[topLabel]);
 
     const newButtonLabelImplementation = useCallback((e) => {
-        newLabel === "Show all" ? setNewLabel("Collapse") : setNewLabel("Show All");
+        newLabel === "Show all" ? setNewLabel("Collapse") : setNewLabel("Show all");
     },[newLabel]);
 
 
