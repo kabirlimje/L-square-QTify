@@ -43,10 +43,11 @@ const Section = () => {
                     <Button label={topLabel} onClick={topButtonLabelImplementation} />
                 </div>
                 <div className={styles.displayGrid}>
-                    {topAlbums.map((album, index) => {
-                        if (topLabel === "Show all" && index >= 7) return null;
-                        return <Card topAlbum={album} key={album.id} type="top"/>
-                    })}
+                    {topAlbums.map((album, index) => (
+                        <div key={album.id} style={{display:topLabel === "Show all" && index >= 7 ? "none" : "block"}}>
+                            <Card topAlbum={album} key={album.id} type="top"/>
+                        </div>
+                    ))}
                 </div>
                     {topLabel === "Collapse" && <hr className={styles.line}/>}
                 <div className={styles.section}>
@@ -54,10 +55,11 @@ const Section = () => {
                     <Button label={newLabel} onClick={newButtonLabelImplementation} />
                 </div>
                 <div className={styles.displayGrid}>
-                    {newAlbums.map((album, index) => {
-                        if (newLabel === "Show all" && index >= 7) return null;
-                        return <Card newAlbum={album} key={album.id} type="new"/>
-                    })}
+                    {newAlbums.map((album, index) => (
+                        <div key={album.id} style={{display: newLabel === "Show all" && index >= 7 ? "none" : "block"}}>
+                            <Card newAlbum={album} key={album.id} type="new"/>
+                        </div>
+                    ))}
                 </div>
            </div>
            <hr className={styles.line}/>

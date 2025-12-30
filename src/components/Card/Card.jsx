@@ -28,7 +28,7 @@ const Card = ({topAlbum, newAlbum, type="top"}) => {
                     }}
                  />
             </div>
-            New English Songs
+            <p className={styles.imageTitle}>{topAlbum.title}</p>
         </div>
         )
     }
@@ -56,7 +56,7 @@ const Card = ({topAlbum, newAlbum, type="top"}) => {
                     }}
                  />
             </div>
-            New English Songs
+            <p className={styles.imageTitle}>{newAlbum.title}</p>
         </div>
         )
     }
