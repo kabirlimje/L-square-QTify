@@ -1,0 +1,26 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400&display=swap");
+
+.parentDivImage {
+  width: 159px;
+  height: max-content;
+  gap: 6px;
+  opacity: 1;
+  color: white;
+}
+
+.imageContainerWithFollows {
+  width: 159px;
+  min-height: 205px;
+  padding-bottom: 6px;
+  opacity: 1;
+  border-radius: 10px;
+  background: rgba(255, 255, 255, 1);
+}
+
+.actualImage {
+  width: 159px;
+  height: 170px;
+  opacity: 1;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}

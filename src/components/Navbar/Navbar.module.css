@@ -3,12 +3,13 @@
   height: 74px;
   width: 97vw;
   padding: 0px 32px;
+  padding-right: 50px;
   display: flex;
   align-items: center;
   justify-content: space-between;
 }
 
 .searchBar {
-  height: 48px;
+  height: 70px;
   width: 68px;
 }

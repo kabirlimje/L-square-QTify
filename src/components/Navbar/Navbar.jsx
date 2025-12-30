@@ -5,7 +5,7 @@ import Logo from "../Logo/Logo";
 import Search from "../Search/Search";
 import styles from "./Navbar.module.css";
 
-function Navbar({ searchData }) {
+function Navbar({ searchData}) {
   return (
     <nav className={styles.navbar}>
       <Link to="/">
@@ -15,7 +15,7 @@ function Navbar({ searchData }) {
         placeholder="Search a song of your choice"
         searchData={searchData}
       />
-      <Button />
+      <Button label={"Give Feedback"}/>
     </nav>
   );
 }
