@@ -29,6 +29,7 @@
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
   z-index: 10;
   padding: 0;
+  pointer-events: auto;
 }
 
 .navButton:hover {
@@ -45,7 +46,7 @@
   width: 20px;
   height: 20px;
   display: block;
-  pointer-events: none;
+  /* pointer-events: none; */
 }
 
 /* Optional: Disable button when at start/end */
