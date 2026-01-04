@@ -1,0 +1,81 @@
+.carouselWrapper {
+  position: relative;
+  display: flex;
+  align-items: center;
+  width: 100%;
+  gap: 20px;
+  padding: 0 10px;
+}
+
+.swiper {
+  width: 100%;
+  overflow: hidden;
+}
+
+.navButton {
+  flex-shrink: 0;
+  background-color: transparent !important;
+  border: none;
+  border-radius: 50%;
+  width: 45px;
+  height: 45px;
+  min-width: 45px;
+  min-height: 45px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+  z-index: 10;
+  padding: 0;
+}
+
+.navButton:hover {
+  background-color: #f0f0f0;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+  transform: scale(1.08);
+}
+
+.navButton:active {
+  transform: scale(0.95);
+}
+
+.navButton img {
+  width: 20px;
+  height: 20px;
+  display: block;
+  pointer-events: none;
+}
+
+/* Optional: Disable button when at start/end */
+.navButton:disabled {
+  opacity: 0.4;
+  cursor: not-allowed;
+}
+
+.navButton:disabled:hover {
+  transform: scale(1);
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+  background-color: #ffffff;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .carouselWrapper {
+    gap: 10px;
+    padding: 0 5px;
+  }
+  
+  .navButton {
+    width: 35px;
+    height: 35px;
+    min-width: 35px;
+    min-height: 35px;
+  }
+  
+  .navButton img {
+    width: 16px;
+    height: 16px;
+  }
+}
