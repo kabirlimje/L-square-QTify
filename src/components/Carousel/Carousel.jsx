@@ -39,7 +39,7 @@ const Carousel = ({ data, type="" }) => {
         ref={swiperRef}
         modules={[Navigation]}
         slidesPerView={7}
-        slidesPerGroup={2}
+        slidesPerGroup={4}
         spaceBetween={20}
         breakpoints={{
           320: { slidesPerView: 2, spaceBetween: 10 },
